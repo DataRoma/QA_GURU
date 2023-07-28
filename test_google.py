@@ -19,5 +19,5 @@ def test_search_2(maximize_browser_window):
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('gfgvjhfv').press_enter()
     browser.element('[id="topstuff""]').should(have.text('По запросу gfgvjhfv ничего не найдено.'))
-
+    print('При поиске по gfgvjhfv, ничего не находится')
 
